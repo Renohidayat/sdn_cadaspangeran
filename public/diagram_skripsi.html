@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagram Skripsi - RANCANG BANGUN SISTEM INFORMASI AKADEMIK PADA SD CADAS PANGERAN DENGAN METODE RAD</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Times+New+Roman&display=swap');
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background: #FFFFFF;
+            color: #000000;
+            padding: 40px 60px;
+            font-size: 12pt;
+            line-height: 1.5;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 16pt;
+            margin-bottom: 30px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .diagram-section {
+            page-break-inside: avoid;
+            margin-bottom: 50px;
+            border: none;
+            background: #fff;
+        }
+
+        .diagram-title {
+            text-align: center;
+            font-weight: bold;
+            font-size: 12pt;
+            margin-top: 15px;
+            margin-bottom: 30px;
+            color: #000;
+        }
+
+        .mermaid {
+            display: flex;
+            justify-content: center;
+            background: #FFFFFF;
+            padding: 20px;
+        }
+
+        .mermaid svg {
+            background: #FFFFFF !important;
+            max-width: 100%;
+        }
+
+        .page-break {
+            page-break-before: always;
+            margin-top: 40px;
+        }
+
+        .note {
+            font-style: italic;
+            font-size: 10pt;
+            color: #333;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        @media print {
+            body { padding: 20px; }
+            .diagram-section { page-break-inside: avoid; }
+            .no-print { display: none; }
+        }
+
+        .btn-download {
+            display: inline-block;
+            margin: 10px auto 30px;
+            padding: 10px 24px;
+            background: #1565C0;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 6px;
+            font-size: 11pt;
+            font-family: 'Times New Roman', Times, serif;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .btn-download:hover {
+            background: #0D47A1;
+        }
+        .btn-wrapper {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<h1>RANCANG BANGUN SISTEM INFORMASI AKADEMIK PADA SD CADAS PANGERAN<br>DENGAN METODE RAPID APPLICATION DEVELOPMENT (RAD)</h1>
+
+<p class="note no-print"><strong>Petunjuk:</strong> Klik kanan pada setiap diagram &rarr; "Save image as..." untuk menyimpan sebagai gambar, atau gunakan Ctrl+P untuk Print/Save as PDF.</p>
+
+<!-- ============================================ -->
+<!-- GAMBAR 3.1 - Diagram Alir Sistem Berjalan -->
+<!-- ============================================ -->
+<div class="diagram-section">
+<div class="mermaid">
+flowchart TD
+    A(["Mulai"]) --> B["Orang Tua Mendaftarkan Anak ke Sekolah"]
+    B --> C["Staf TU Mencatat Data Siswa Secara Manual di Buku Induk"]
+    C --> D["Kepala Sekolah Menyusun Pembagian Kelas Secara Manual"]
+    D --> E["Staf TU Membuat Jadwal Pelajaran di Papan Tulis atau Excel"]
+    E --> F["Guru Mengajar Sesuai Jadwal"]
+    F --> G["Guru Mencatat Nilai Siswa di Buku Nilai atau Kertas"]
+    G --> H["Guru Menyerahkan Rekap Nilai ke Wali Kelas"]
+    H --> I["Wali Kelas Mengisi Rapor Siswa Secara Manual"]
+    I --> J["Rapor Dibagikan kepada Orang Tua atau Wali Murid"]
+    J --> K(["Selesai"])
+
+    style A fill:#C8E6C9,stroke:#2E7D32,color:#000000
+    style K fill:#FFCDD2,stroke:#C62828,color:#000000
+    style B fill:#FFFFFF,stroke:#333333,color:#000000
+    style C fill:#FFF9C4,stroke:#F9A825,color:#000000
+    style D fill:#FFFFFF,stroke:#333333,color:#000000
+    style E fill:#FFF9C4,stroke:#F9A825,color:#000000
+    style F fill:#FFFFFF,stroke:#333333,color:#000000
+    style G fill:#FFF9C4,stroke:#F9A825,color:#000000
+    style H fill:#FFFFFF,stroke:#333333,color:#000000
+    style I fill:#FFF9C4,stroke:#F9A825,color:#000000
+    style J fill:#FFFFFF,stroke:#333333,color:#000000
+</div>
+<div class="diagram-title">Gambar 3.1 Diagram Alir Sistem Berjalan</div>
+<div class="btn-wrapper no-print"><button class="btn-download" onclick="downloadDiagram(0, 'Gambar_3.1_Diagram_Alir_Sistem_Berjalan')">⬇ Download Gambar 3.1</button></div>
+</div>
+
+<!-- ============================================ -->
+<!-- GAMBAR 3.2 - Use Case Diagram -->
+<!-- ============================================ -->
+<div class="diagram-section page-break">
+<div class="mermaid">
+graph LR
+    subgraph Aktor
+        Admin["Admin / Staf"]
+        Guru["Guru"]
+        Siswa["Siswa"]
+        Publik["Pengunjung"]
+    end
+
+    subgraph Sistem["Sistem Informasi Akademik SD Negeri Cadas Pangeran"]
+        UC1["Login"]
+        UC2["Kelola Data Guru"]
+        UC3["Kelola Data Siswa"]
+        UC4["Kelola Data Kelas"]
+        UC5["Kelola Mata Pelajaran"]
+        UC6["Kelola Jadwal Pelajaran"]
+        UC7["Kelola Tahun Ajaran"]
+        UC8["Kelola Nilai"]
+        UC9["Kelola Berita"]
+        UC10["Kelola Event / Acara"]
+        UC11["Kelola Kegiatan"]
+        UC12["Kelola Slider dan About"]
+        UC13["Kelola Footer dan Profil Sekolah"]
+        UC14["Kelola PPDB"]
+        UC15["Lihat Jadwal Pelajaran"]
+        UC16["Input Nilai Siswa"]
+        UC17["Lihat Jadwal Siswa"]
+        UC18["Lihat Nilai Siswa"]
+        UC19["Lihat Beranda Website"]
+        UC20["Lihat Berita dan Event"]
+        UC21["Pendaftaran PPDB Online"]
+        UC22["Lihat Halaman Kontak"]
+        UC23["Dashboard"]
+    end
+
+    Admin --> UC1
+    Admin --> UC2
+    Admin --> UC3
+    Admin --> UC4
+    Admin --> UC5
+    Admin --> UC6
+    Admin --> UC7
+    Admin --> UC8
+    Admin --> UC9
+    Admin --> UC10
+    Admin --> UC11
+    Admin --> UC12
+    Admin --> UC13
+    Admin --> UC14
+    Admin --> UC23
+
+    Guru --> UC1
+    Guru --> UC15
+    Guru --> UC16
+    Guru --> UC23
+
+    Siswa --> UC1
+    Siswa --> UC17
+    Siswa --> UC18
+    Siswa --> UC23
+
+    Publik --> UC19
+    Publik --> UC20
+    Publik --> UC21
+    Publik --> UC22
+
+    style Admin fill:#BBDEFB,stroke:#1565C0,color:#000000
+    style Guru fill:#C8E6C9,stroke:#2E7D32,color:#000000
+    style Siswa fill:#FFF9C4,stroke:#F9A825,color:#000000
+    style Publik fill:#F8BBD0,stroke:#AD1457,color:#000000
+</div>
+<div class="diagram-title">Gambar 3.2 Use Case Diagram</div>
+<div class="btn-wrapper no-print"><button class="btn-download" onclick="downloadDiagram(1, 'Gambar_3.2_Use_Case_Diagram')">⬇ Download Gambar 3.2</button></div>
+</div>
+
+<!-- ============================================ -->
+<!-- GAMBAR 3.3 - Class Diagram -->
+<!-- ============================================ -->
+<div class="diagram-section page-break">
+<div class="mermaid">
+classDiagram
+    class User {
+        +int id
+        +string name
+        +string username
+        +string email
+        +string password
+        +string role
+        +string status
+        +string foto_profile
+        +guru() Guru
+        +siswa() Siswa
+    }
+
+    class Guru {
+        +int id
+        +int user_id
+        +string nip
+        +string nama
+        +string jenis_kelamin
+        +string telepon
+        +string alamat
+        +user() User
+    }
+
+    class Siswa {
+        +int id
+        +int user_id
+        +string nis
+        +string nama
+        +string jenis_kelamin
+        +int kelas_id
+        +string alamat
+        +string telepon
+        +string status
+        +user() User
+        +kelas() Kelas
+    }
+
+    class Kelas {
+        +int id
+        +string nama_kelas
+        +int tahun_ajaran_id
+        +int wali_kelas_id
+        +tahunAjaran() TahunAjaran
+        +waliKelas() Guru
+    }
+
+    class MataPelajaran {
+        +int id
+        +string kode_mapel
+        +string nama_mapel
+    }
+
+    class TahunAjaran {
+        +int id
+        +string nama
+        +string semester
+        +string is_active
+    }
+
+    class Jadwal {
+        +int id
+        +int kelas_id
+        +int mata_pelajaran_id
+        +int guru_id
+        +string hari
+        +time jam_mulai
+        +time jam_selesai
+        +kelas() Kelas
+        +mataPelajaran() MataPelajaran
+        +guru() Guru
+    }
+
+    class Nilai {
+        +int id
+        +int siswa_id
+        +int mata_pelajaran_id
+        +int kelas_id
+        +int tahun_ajaran_id
+        +string jenis_nilai
+        +float nilai
+        +siswa() Siswa
+        +mataPelajaran() MataPelajaran
+        +kelas() Kelas
+        +tahunAjaran() TahunAjaran
+    }
+
+    class Berita {
+        +int id
+        +string title
+        +string slug
+        +text content
+        +int kategori_id
+        +int created_by
+        +string is_active
+        +kategori() KategoriBerita
+        +user() User
+    }
+
+    class KategoriBerita {
+        +int id
+        +string nama
+        +string is_active
+    }
+
+    class Events {
+        +int id
+        +string title
+        +string slug
+        +text desc
+        +datetime acara
+        +string lokasi
+        +string is_active
+    }
+
+    class Pendaftaran {
+        +int id
+        +string nama_lengkap
+        +string jenis_kelamin
+        +string ttl
+        +string alamat
+        +string agama
+        +string nama_ayah
+        +string nama_ibu
+        +string file_akte
+        +string file_bukti_tf
+        +string status
+    }
+
+    User "1" --> "0..1" Guru : hasOne
+    User "1" --> "0..1" Siswa : hasOne
+    User "1" --> "0..*" Berita : createdBy
+    Siswa "0..*" --> "1" Kelas : belongsTo
+    Kelas "0..*" --> "1" TahunAjaran : belongsTo
+    Kelas "0..*" --> "1" Guru : waliKelas
+    Jadwal "0..*" --> "1" Kelas : belongsTo
+    Jadwal "0..*" --> "1" MataPelajaran : belongsTo
+    Jadwal "0..*" --> "1" Guru : belongsTo
+    Nilai "0..*" --> "1" Siswa : belongsTo
+    Nilai "0..*" --> "1" MataPelajaran : belongsTo
+    Nilai "0..*" --> "1" Kelas : belongsTo
+    Nilai "0..*" --> "1" TahunAjaran : belongsTo
+    Berita "0..*" --> "1" KategoriBerita : belongsTo
+</div>
+<div class="diagram-title">Gambar 3.3 Class Diagram</div>
+<div class="btn-wrapper no-print"><button class="btn-download" onclick="downloadDiagram(2, 'Gambar_3.3_Class_Diagram')">⬇ Download Gambar 3.3</button></div>
+</div>
+
+<!-- ============================================ -->
+<!-- GAMBAR 3.4 - Activity Diagram Admin -->
+<!-- ============================================ -->
+<div class="diagram-section page-break">
+<div class="mermaid">
+flowchart TD
+    A(["Mulai"]) --> B["Membuka Halaman Login"]
+    B --> C["Memasukkan Username dan Password"]
+    C --> D{"Validasi Login"}
+    D -- "Gagal" --> E["Menampilkan Pesan Error"]
+    E --> B
+    D -- "Berhasil" --> F["Masuk ke Dashboard Admin"]
+    F --> G{"Pilih Menu"}
+
+    G --> H["Kelola Data Akademik"]
+    H --> H1["Data Guru / Siswa / Kelas"]
+    H1 --> H2["Mata Pelajaran / Jadwal"]
+    H2 --> H3["Tahun Ajaran / Nilai"]
+    H3 --> CRUD{"Tambah / Edit / Hapus Data"}
+    CRUD --> DB[("Simpan ke Database")]
+    DB --> SUKSES["Tampilkan Notifikasi Berhasil"]
+
+    G --> I["Kelola Konten Website"]
+    I --> I1["Berita / Event / Kegiatan"]
+    I1 --> I2["Slider / About / Footer"]
+    I2 --> CRUD
+
+    G --> J["Kelola Pengguna"]
+    J --> J1["Pengajar / Murid / Staf"]
+    J1 --> CRUD
+
+    G --> K["Kelola PPDB"]
+    K --> K1["Lihat dan Verifikasi Pendaftar"]
+    K1 --> DB
+
+    SUKSES --> L{"Lanjut atau Logout?"}
+    L -- "Lanjut" --> G
+    L -- "Logout" --> M(["Selesai"])
+
+    style A fill:#C8E6C9,stroke:#2E7D32,color:#000000
+    style M fill:#FFCDD2,stroke:#C62828,color:#000000
+    style D fill:#FFF9C4,stroke:#F9A825,color:#000000
+    style CRUD fill:#FFF9C4,stroke:#F9A825,color:#000000
+    style L fill:#FFF9C4,stroke:#F9A825,color:#000000
+    style G fill:#FFF9C4,stroke:#F9A825,color:#000000
+    style DB fill:#E3F2FD,stroke:#1565C0,color:#000000
+    style E fill:#FFCDD2,stroke:#C62828,color:#000000
+    style SUKSES fill:#C8E6C9,stroke:#2E7D32,color:#000000
+</div>
+<div class="diagram-title">Gambar 3.4 Activity Diagram Admin</div>
+<div class="btn-wrapper no-print"><button class="btn-download" onclick="downloadDiagram(3, 'Gambar_3.4_Activity_Diagram_Admin')">⬇ Download Gambar 3.4</button></div>
+</div>
+
+<!-- ============================================ -->
+<!-- GAMBAR 3.5 - Activity Diagram Guru -->
+<!-- ============================================ -->
+<div class="diagram-section page-break">
+<div class="mermaid">
+flowchart TD
+    A(["Mulai"]) --> B["Membuka Halaman Login Guru"]
+    B --> C["Memasukkan Username dan Password"]
+    C --> D{"Validasi Login"}
+    D -- "Gagal" --> E["Menampilkan Pesan Error"]
+    E --> B
+    D -- "Berhasil" --> F["Masuk ke Dashboard Guru"]
+    F --> G{"Pilih Menu"}
+
+    G --> H["Lihat Jadwal Mengajar"]
+    H --> H1["Sistem Menampilkan Jadwal Berdasarkan ID Guru"]
+    H1 --> H2["Guru Melihat Informasi Hari, Jam, Kelas, Mata Pelajaran"]
+
+    G --> I["Input Nilai Siswa"]
+    I --> I1["Pilih Kelas"]
+    I1 --> I2["Pilih Mata Pelajaran"]
+    I2 --> I3["Sistem Menampilkan Daftar Siswa"]
+    I3 --> I4["Input Nilai Per Siswa"]
+    I4 --> I5["Klik Simpan"]
+    I5 --> DB[("Simpan Nilai ke Database")]
+    DB --> I6["Tampilkan Notifikasi Berhasil"]
+
+    H2 --> J{"Lanjut atau Logout?"}
+    I6 --> J
+    J -- "Lanjut" --> G
+    J -- "Logout" --> K(["Selesai"])
+
+    style A fill:#C8E6C9,stroke:#2E7D32,color:#000000
+    style K fill:#FFCDD2,stroke:#C62828,color:#000000
+    style D fill:#FFF9C4,stroke:#F9A825,color:#000000
+    style G fill:#FFF9C4,stroke:#F9A825,color:#000000
+    style J fill:#FFF9C4,stroke:#F9A825,color:#000000
+    style DB fill:#E3F2FD,stroke:#1565C0,color:#000000
+    style E fill:#FFCDD2,stroke:#C62828,color:#000000
+    style I6 fill:#C8E6C9,stroke:#2E7D32,color:#000000
+</div>
+<div class="diagram-title">Gambar 3.5 Activity Diagram Guru</div>
+<div class="btn-wrapper no-print"><button class="btn-download" onclick="downloadDiagram(4, 'Gambar_3.5_Activity_Diagram_Guru')">⬇ Download Gambar 3.5</button></div>
+</div>
+
+<!-- ============================================ -->
+<!-- GAMBAR 3.6 - Activity Diagram Siswa -->
+<!-- ============================================ -->
+<div class="diagram-section page-break">
+<div class="mermaid">
+flowchart TD
+    A(["Mulai"]) --> B["Membuka Halaman Login Siswa"]
+    B --> C["Memasukkan Username dan Password"]
+    C --> D{"Validasi Login"}
+    D -- "Gagal" --> E["Menampilkan Pesan Error"]
+    E --> B
+    D -- "Berhasil" --> F["Masuk ke Dashboard Siswa"]
+    F --> G{"Pilih Menu"}
+
+    G --> H["Lihat Jadwal Pelajaran"]
+    H --> H1["Sistem Menampilkan Jadwal Sesuai Kelas Siswa"]
+    H1 --> H2["Siswa Melihat Informasi Hari, Jam, Mata Pelajaran, Guru"]
+
+    G --> I["Lihat Nilai"]
+    I --> I1["Sistem Mengambil Data Nilai Berdasarkan ID Siswa"]
+    I1 --> I2["Menampilkan Daftar Nilai Per Mata Pelajaran"]
+
+    H2 --> J{"Lanjut atau Logout?"}
+    I2 --> J
+    J -- "Lanjut" --> G
+    J -- "Logout" --> K(["Selesai"])
+
+    style A fill:#C8E6C9,stroke:#2E7D32,color:#000000
+    style K fill:#FFCDD2,stroke:#C62828,color:#000000
+    style D fill:#FFF9C4,stroke:#F9A825,color:#000000
+    style G fill:#FFF9C4,stroke:#F9A825,color:#000000
+    style J fill:#FFF9C4,stroke:#F9A825,color:#000000
+    style E fill:#FFCDD2,stroke:#C62828,color:#000000
+</div>
+<div class="diagram-title">Gambar 3.6 Activity Diagram Siswa</div>
+<div class="btn-wrapper no-print"><button class="btn-download" onclick="downloadDiagram(5, 'Gambar_3.6_Activity_Diagram_Siswa')">⬇ Download Gambar 3.6</button></div>
+</div>
+
+<!-- ============================================ -->
+<!-- GAMBAR 3.7 - Sequence Diagram Login -->
+<!-- ============================================ -->
+<div class="diagram-section page-break">
+<div class="mermaid">
+sequenceDiagram
+    actor Pengguna
+    participant Browser as Halaman Login
+    participant Controller as LoginController
+    participant Auth as Auth Service
+    participant DB as Database
+
+    Pengguna->>Browser: Mengisi Username dan Password
+    Browser->>Controller: POST /login (credentials)
+    Controller->>Auth: attempt(credentials)
+    Auth->>DB: SELECT * FROM users WHERE username = ?
+    DB-->>Auth: Data User atau kosong
+
+    alt Login Berhasil
+        Auth-->>Controller: Authenticated = true
+        Controller->>Controller: Cek Role (Admin/Guru/Siswa)
+        Controller-->>Browser: Redirect ke Dashboard sesuai Role
+        Browser-->>Pengguna: Menampilkan Halaman Dashboard
+    else Login Gagal
+        Auth-->>Controller: Authenticated = false
+        Controller-->>Browser: Redirect ke Login + Pesan Error
+        Browser-->>Pengguna: Menampilkan Pesan Gagal Login
+    end
+</div>
+<div class="diagram-title">Gambar 3.7 Sequence Diagram Login</div>
+<div class="btn-wrapper no-print"><button class="btn-download" onclick="downloadDiagram(6, 'Gambar_3.7_Sequence_Diagram_Login')">⬇ Download Gambar 3.7</button></div>
+</div>
+
+<!-- ============================================ -->
+<!-- GAMBAR 3.8 - Sequence Diagram Input Nilai -->
+<!-- ============================================ -->
+<div class="diagram-section page-break">
+<div class="mermaid">
+sequenceDiagram
+    actor Guru
+    participant Browser as Halaman Nilai
+    participant Controller as NilaiController
+    participant ModelN as Model Nilai
+    participant ModelS as Model Siswa
+    participant DB as Database
+
+    Guru->>Browser: Memilih Menu Nilai
+    Browser->>Controller: GET /guru/nilai
+    Controller->>DB: SELECT kelas dan mata_pelajaran
+    DB-->>Controller: Data Kelas dan Mapel
+    Controller-->>Browser: Menampilkan Form Pilihan
+
+    Guru->>Browser: Memilih Kelas dan Mata Pelajaran
+    Browser->>Controller: GET /guru/nilai?kelas_id&mapel_id
+    Controller->>ModelS: Siswa where kelas_id
+    ModelS->>DB: SELECT * FROM siswas WHERE kelas_id = ?
+    DB-->>ModelS: Daftar Siswa
+    Controller-->>Browser: Menampilkan Daftar Siswa + Form Input Nilai
+
+    Guru->>Browser: Mengisi Nilai Per Siswa lalu Klik Simpan
+    Browser->>Controller: POST /guru/nilai (data nilai)
+    Controller->>ModelN: Nilai create(data)
+    ModelN->>DB: INSERT INTO nilais (...)
+    DB-->>ModelN: OK
+    Controller-->>Browser: Redirect + Flash Berhasil
+    Browser-->>Guru: Menampilkan Notifikasi Berhasil
+</div>
+<div class="diagram-title">Gambar 3.8 Sequence Diagram Input Nilai</div>
+<div class="btn-wrapper no-print"><button class="btn-download" onclick="downloadDiagram(7, 'Gambar_3.8_Sequence_Diagram_Input_Nilai')">⬇ Download Gambar 3.8</button></div>
+</div>
+
+<!-- ============================================ -->
+<!-- GAMBAR 3.9 - Sequence Diagram Lihat Nilai -->
+<!-- ============================================ -->
+<div class="diagram-section page-break">
+<div class="mermaid">
+sequenceDiagram
+    actor Siswa
+    participant Browser as Halaman Nilai
+    participant Controller as NilaiController
+    participant ModelN as Model Nilai
+    participant DB as Database
+
+    Siswa->>Browser: Memilih Menu Nilai
+    Browser->>Controller: GET /siswa/nilai
+    Controller->>Controller: Ambil Auth user siswa id
+    Controller->>ModelN: Nilai where siswa_id
+    ModelN->>DB: SELECT * FROM nilais WHERE siswa_id = ?
+    DB-->>ModelN: Data Nilai Siswa
+    ModelN-->>Controller: Collection Nilai + Relasi Mapel
+    Controller-->>Browser: Menampilkan Tabel Nilai
+    Browser-->>Siswa: Melihat Nilai Per Mata Pelajaran
+</div>
+<div class="diagram-title">Gambar 3.9 Sequence Diagram Lihat Nilai</div>
+<div class="btn-wrapper no-print"><button class="btn-download" onclick="downloadDiagram(8, 'Gambar_3.9_Sequence_Diagram_Lihat_Nilai')">⬇ Download Gambar 3.9</button></div>
+</div>
+
+<!-- ============================================ -->
+<!-- GAMBAR 3.10 - Entity Relationship Diagram -->
+<!-- ============================================ -->
+<div class="diagram-section page-break">
+<div class="mermaid">
+erDiagram
+    USERS {
+        int id PK
+        string name
+        string username
+        string email
+        string password
+        string role
+        string status
+        string foto_profile
+    }
+
+    GURUS {
+        int id PK
+        int user_id FK
+        string nip
+        string nama
+        string jenis_kelamin
+        string telepon
+        string alamat
+    }
+
+    SISWAS {
+        int id PK
+        int user_id FK
+        string nis
+        string nama
+        string jenis_kelamin
+        int kelas_id FK
+        string alamat
+        string telepon
+        string status
+    }
+
+    KELAS {
+        int id PK
+        string nama_kelas
+        int tahun_ajaran_id FK
+        int wali_kelas_id FK
+    }
+
+    TAHUN_AJARANS {
+        int id PK
+        string nama
+        string semester
+        string is_active
+    }
+
+    MATA_PELAJARANS {
+        int id PK
+        string kode_mapel
+        string nama_mapel
+    }
+
+    JADWALS {
+        int id PK
+        int kelas_id FK
+        int mata_pelajaran_id FK
+        int guru_id FK
+        string hari
+        time jam_mulai
+        time jam_selesai
+    }
+
+    NILAIS {
+        int id PK
+        int siswa_id FK
+        int mata_pelajaran_id FK
+        int kelas_id FK
+        int tahun_ajaran_id FK
+        string jenis_nilai
+        float nilai
+    }
+
+    BERITAS {
+        int id PK
+        string title
+        string slug
+        string thumbnail
+        text content
+        int kategori_id FK
+        int created_by FK
+        string is_active
+    }
+
+    KATEGORI_BERITAS {
+        int id PK
+        string nama
+        string is_active
+    }
+
+    EVENTS {
+        int id PK
+        string title
+        string slug
+        string thumbnail
+        text desc
+        datetime acara
+        string lokasi
+        string is_active
+    }
+
+    PENDAFTARANS {
+        int id PK
+        string nama_lengkap
+        string nama_panggilan
+        string jenis_kelamin
+        string ttl
+        string alamat
+        string agama
+        string nama_ayah
+        string nama_ibu
+        string file_akte
+        string file_bukti_tf
+        string status
+    }
+
+    USERS ||--o| GURUS : "has one"
+    USERS ||--o| SISWAS : "has one"
+    USERS ||--o{ BERITAS : "created by"
+    SISWAS }o--|| KELAS : "belongs to"
+    KELAS }o--|| TAHUN_AJARANS : "belongs to"
+    KELAS }o--|| GURUS : "wali kelas"
+    JADWALS }o--|| KELAS : "belongs to"
+    JADWALS }o--|| MATA_PELAJARANS : "belongs to"
+    JADWALS }o--|| GURUS : "belongs to"
+    NILAIS }o--|| SISWAS : "belongs to"
+    NILAIS }o--|| MATA_PELAJARANS : "belongs to"
+    NILAIS }o--|| KELAS : "belongs to"
+    NILAIS }o--|| TAHUN_AJARANS : "belongs to"
+    BERITAS }o--|| KATEGORI_BERITAS : "belongs to"
+</div>
+<div class="diagram-title">Gambar 3.10 Entity Relationship Diagram (ERD)</div>
+<div class="btn-wrapper no-print"><button class="btn-download" onclick="downloadDiagram(9, 'Gambar_3.10_ERD')">⬇ Download Gambar 3.10</button></div>
+</div>
+
+<script>
+    mermaid.initialize({
+        startOnLoad: true,
+        theme: 'base',
+        themeVariables: {
+            primaryColor: '#FFFFFF',
+            primaryTextColor: '#000000',
+            primaryBorderColor: '#333333',
+            lineColor: '#333333',
+            secondaryColor: '#F5F5F5',
+            tertiaryColor: '#FFFFFF',
+            background: '#FFFFFF',
+            mainBkg: '#FFFFFF',
+            nodeBorder: '#333333',
+            clusterBkg: '#F5F5F5',
+            clusterBorder: '#333333',
+            titleColor: '#000000',
+            edgeLabelBackground: '#FFFFFF',
+            signalColor: '#333333',
+            signalTextColor: '#000000',
+            labelBoxBkgColor: '#FFFFFF',
+            labelBoxBorderColor: '#333333',
+            labelTextColor: '#000000',
+            loopTextColor: '#000000',
+            noteBkgColor: '#FFF9C4',
+            noteTextColor: '#000000',
+            noteBorderColor: '#F9A825',
+            activationBkgColor: '#E3F2FD',
+            activationBorderColor: '#1565C0',
+            actorBkg: '#E3F2FD',
+            actorBorder: '#1565C0',
+            actorTextColor: '#000000',
+            actorLineColor: '#333333',
+            classText: '#000000'
+        },
+        flowchart: { useMaxWidth: true, htmlLabels: true },
+        sequence: { useMaxWidth: true },
+        er: { useMaxWidth: true }
+    });
+
+    function inlineStyles(srcEl, destEl) {
+        var computed = window.getComputedStyle(srcEl);
+        for (var i = 0; i < computed.length; i++) {
+            var prop = computed[i];
+            destEl.style.setProperty(prop, computed.getPropertyValue(prop));
+        }
+        for (var j = 0; j < srcEl.children.length; j++) {
+            if (destEl.children[j]) {
+                inlineStyles(srcEl.children[j], destEl.children[j]);
+            }
+        }
+    }
+
+    function downloadDiagram(index, filename) {
+        var svgElements = document.querySelectorAll('.mermaid svg');
+        if (index >= svgElements.length) { alert('Diagram belum ter-render. Coba refresh halaman.'); return; }
+        
+        var btn = event.target;
+        btn.textContent = '⏳ Sedang memproses...';
+        btn.disabled = true;
+
+        var svgEl = svgElements[index];
+        var cloned = svgEl.cloneNode(true);
+        
+        // Inline all computed styles
+        inlineStyles(svgEl, cloned);
+        
+        // Set explicit dimensions
+        var bbox = svgEl.getBoundingClientRect();
+        var w = bbox.width;
+        var h = bbox.height;
+        cloned.setAttribute('width', w);
+        cloned.setAttribute('height', h);
+        cloned.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+        cloned.setAttribute('xmlns:xlink', 'http://www.w3.org/1999/xlink');
+        cloned.style.background = '#FFFFFF';
+        
+        // Add white background rect
+        var bgRect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+        bgRect.setAttribute('width', '100%');
+        bgRect.setAttribute('height', '100%');
+        bgRect.setAttribute('fill', '#FFFFFF');
+        cloned.insertBefore(bgRect, cloned.firstChild);
+
+        var svgData = new XMLSerializer().serializeToString(cloned);
+        var scaleFactor = 5;
+        var canvas = document.createElement('canvas');
+        canvas.width = w * scaleFactor;
+        canvas.height = h * scaleFactor;
+        var ctx = canvas.getContext('2d');
+        ctx.imageSmoothingEnabled = true;
+        ctx.imageSmoothingQuality = 'high';
+
+        var img = new Image();
+        img.onload = function() {
+            ctx.fillStyle = '#FFFFFF';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+            
+            canvas.toBlob(function(blob) {
+                var url = URL.createObjectURL(blob);
+                var a = document.createElement('a');
+                a.href = url;
+                a.download = filename + '.png';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+                
+                btn.textContent = '✅ Berhasil!';
+                setTimeout(function() {
+                    btn.textContent = '⬇ Download ' + filename.replace(/_/g, ' ').replace('Gambar ', 'Gambar ');
+                    btn.disabled = false;
+                }, 2000);
+            }, 'image/png', 1.0);
+        };
+        img.onerror = function() {
+            // Fallback: direct SVG download
+            var blob = new Blob([svgData], {type: 'image/svg+xml'});
+            var url = URL.createObjectURL(blob);
+            var a = document.createElement('a');
+            a.href = url;
+            a.download = filename + '.svg';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            btn.textContent = '⬇ Download ' + filename.replace(/_/g, ' ');
+            btn.disabled = false;
+        };
+        img.src = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(svgData)));
+    }
+</script>
+
+</body>
+</html>

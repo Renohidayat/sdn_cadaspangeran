@@ -1,0 +1,9 @@
+{
+    "Frontend": true,
+    "Pendaftaran": false,
+    "PPDB": false,
+    "Perpustakaan": false,
+    "Murid": true,
+    "SPP": false,
+    "Backup": false
+}

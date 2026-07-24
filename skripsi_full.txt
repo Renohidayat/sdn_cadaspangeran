@@ -1,0 +1,469 @@
+﻿RANCANG BANGUN SISTEM INFORMASI AKADEMIK PADA SD CADAS PANGERAN DENGAN METODE RAPID APPLICATION DEVELOPMENT (RAD)
+ PROPOSAL SKRIPSI
+
+Oleh
+Erlan Nurhaditia
+220660121025
+
+PROGRAM STUDI INFORMATIKA
+FAKULTAS TEKNOLOGI INFORMASI
+UNIVERSITAS SEBELAS APRIL
+2025
+LEMBAR PENGESAHAN
+RANCANG BANGUN SISTEM INFORMASI AKADEMIK (SIAKAD) BERBASIS WEBSITE SD NEGERI CADASPANGERAN MENGGUNAKAN METODE RAPID APPLICATION DEVELOPMENT (RAD)
+PROPOSAL SKRIPSI
+
+Oleh
+Erlan Nurhaditia
+220660121025
+
+Program Studi Informatika
+Universitas Sebelas April
+
+Telah disetujui sebagai Proposal Skripsi di Sumedang, pada tanggal……………
+Pembimbing 1,
+
+Pembimbing 2,
+
+Hj. Maya Suhayati, M.Kom.
+NIDN………………………
+
+Deris Santika, M.Kom.
+NIDN……………………..
+
+Ketua Program Studi,
+
+Fathoni Mahardika, S.Kom.,M.T
+NUPTK.1762767668130282
+
+BAB I
+PENDAHULUAN
+Latar Belakang
+Perkembangan teknologi informasi di era digital saat ini telah memberikan dampak yang signifikan dalam berbagai bidang, termasuk bidang pendidikan. Pemanfaatan sistem informasi akademik menjadi kebutuhan penting bagi sekolah untuk meningkatkan efektivitas, efisiensi, serta akurasi dalam pengelolaan data akademik. Sistem informasi akademik mampu membantu institusi pendidikan dalam mengelola data secara terintegrasi, cepat, dan mudah diakses sehingga mendukung proses administrasi dan pengambilan keputusan yang lebih baik.
+SD Cadas Pangeran sebagai salah satu lembaga pendidikan dasar di Kabupaten Sumedang masih menjalankan proses pengelolaan data akademik secara manual. Proses tersebut meliputi pencatatan data siswa, data guru, pengolahan nilai, penyusunan jadwal pelajaran, serta pembuatan laporan akademik. Pengelolaan data secara manual menimbulkan berbagai permasalahan, seperti risiko kehilangan atau kerusakan data, proses pencarian data yang memerlukan waktu lama, terjadinya duplikasi data, serta keterlambatan penyampaian informasi kepada pihak sekolah maupun orang tua siswa.
+Untuk mengatasi permasalahan tersebut, diperlukan pengembangan sistem informasi akademik berbasis web yang dapat mengotomatisasi proses pengelolaan data akademik di SD Cadas Pangeran. Metode Rapid Application Development (RAD) dipilih dalam pengembangan sistem ini karena mampu mempercepat proses pembangunan sistem melalui tahapan prototyping dan keterlibatan pengguna secara langsung. Dengan metode RAD, sistem yang dikembangkan diharapkan lebih sesuai dengan kebutuhan pengguna serta dapat diimplementasikan dalam waktu yang relatif singkat.
+Berdasarkan permasalahan dan kebutuhan tersebut, maka dilakukan penelitian dengan judul “Rancang Bangun Sistem Informasi Akademik pada SD Cadas Pangeran dengan Metode Rapid Application Development (RAD)”, yang diharapkan dapat membantu pihak sekolah dalam meningkatkan efektivitas dan efisiensi pengelolaan data akademik secara terkomputerisasi.
+Rumusan Masalah
+Berdasarkan latar belakang yang telah diuraikan, maka rumusan masalah dalam penelitian Skripsi ini adalah sebagai berikut:
+Bagaimana merancang dan membangun sistem informasi akademik berbasis web pada SD Cadas Pangeran dengan metode Rapid Application Development (RAD) untuk meningkatkan efektivitas dan efisiensi pengelolaan data akademik?
+Tujuan
+Berdasarkan rumusan masalah yang telah dijelaskan tujuan dari penelitian ini yaitu :
+merancang dan membangun sistem informasi akademik berbasis website pada SD Cadas Pangeran dengan menggunakan metode Rapid Application Development (RAD) guna meningkatkan efektivitas dan efisiensi pengelolaan data akademik.
+Batasan Masalah
+Adapun batasan masalah pada penelitian yang akan dilakukan sebagai berikut :
+Sistem yang dikembangkan difokuskan pada pengelolaan data akademik yang meliputi data siswa, data guru, kelas, tahun pelajaran, mata pelajaran, jadwal pelajaran, nilai, data pengguna, informasi sekolah (landing page), serta laporan nilai. 
+Sistem yang dibangun tidak mencakup fitur yang berkaitan dengan pengelolaan keuangan sekolah, seperti pembayaran SPP, honor guru, maupun pengelolaan inventaris.
+Hak akses pengguna sistem dibatasi menjadi tiga jenis pengguna, yaitu administrator, guru (wali kelas atau guru mata pelajaran), dan siswa dengan akses fitur yang berbeda beda.
+Metode pengembangan sistem yang digunakan dalam penelitian ini adalah Rapid Application Development (RAD).
+Kontribusi Penelitian
+Dalam penelitian ini, peneliti berharap dapat memberikan kontribusi kepada berbagai pihak, yaitu :
+Bagi SD Negeri Cadaspangeran :
+penelitian ini menghasilkan sistem informasi akademik berbasis web yang dapat membantu SD Cadas Pangeran dalam mengelola data akademik secara lebih efektif, efisien, dan terstruktur dibandingkan dengan sistem manual.
+Bagi Penulis :
+Penelitian ini memberikan pengalaman dan pemahaman dalam menerapkan ilmu yang telah diperoleh selama perkuliahan, khususnya dalam perancangan dan pengembangan sistem informasi akademik berbasis web menggunakan metode Rapid Application Development (RAD). 
+Bagi Fakultas Teknologi Informasi Universitas Sebelas April
+Penelitian ini dapat menjadi referensi atau bahan kajian bagi mahasiswa dan peneliti selanjutnya yang ingin mengembangkan sistem informasi akademik dengan menggunakan metode Rapid Application Development (RAD).
+Sistematika Penulisan
+BAB I PENDAHULUAN
+Bab ini membahas latar belakang penelitian, rumusan masalah, tujuan penelitian, batasan masalah, kontribusi penelitian, serta sistematika penulisan.
+BAB II TINJAUAN PUSTAKA dan KERANGKA BERPIKIR
+Bab ini berisi landasan teori yang mendukung penelitian, hasil penelitian terdahulu yang relevan, serta konsep dan metode yang digunakan dalam pengembangan sistem, termasuk metode Rapid Application Development (RAD).
+BAB III METODOLOGI PENELITIAN
+Pada bab ini menjelaskan terkait populasi dan sampel penelitian, tempat dan waktu penelitian, jenis penelitian, data dan variabel penelitian.
+Bab ini menjelaskan tahapan penelitian yang dilakukan, metode pengembangan sistem yang digunakan, teknik pengumpulan data, analisis kebutuhan sistem, serta perancangan sistem.
+BAB IV HASIL DAN PEMBAHASAN
+Bab ini membahas hasil implementasi sistem informasi akademik yang telah dibangun, pengujian sistem, serta analisis hasil pengujian berdasarkan kebutuhan pengguna.
+BAB V PENUTUP
+Bab ini berisi kesimpulan dari hasil penelitian yang telah dilakukan serta saran untuk pengembangan sistem di masa mendatang.
+
+BAB II
+TINJAUAN PUSTAKA DAN KERANGKA BERPIKIR
+Pustaka
+Tinjauan pustaka merupakan bagian yang menyajikan pembahasan secara sistematis mengenai teori, konsep, serta hasil-hasil penelitian terdahulu yang memiliki keterkaitan dan relevansi dengan topik penelitian. Kajian ini digunakan sebagai dasar teoritis dan acuan ilmiah dalam pelaksanaan penelitian.
+Rancang Bangun
+Rancang bangun sistem merupakan suatu proses yang mencakup kegiatan perencanaan, perancangan, serta pembangunan suatu sistem informasi hingga siap digunakan oleh pengguna. Tahapan rancang bangun dilakukan secara sistematis untuk memastikan bahwa sistem yang dikembangkan mampu memenuhi kebutuhan pengguna serta tujuan penelitian yang telah ditetapkan.
+Suyoto dan Mudjihartono (2020) menyatakan bahwa rancang bangun sistem informasi melibatkan pembangunan sistem baru maupun pengembangan sistem yang telah ada, baik secara sebagian maupun keseluruhan, guna meningkatkan kinerja dan kualitas sistem sesuai dengan kebutuhan organisasi. Rancang bangun menjadi tahap penting dalam menjamin keberhasilan sistem informasi yang dikembangkan.
+Menurut Pressman (2014), rancang bangun dalam rekayasa perangkat lunak merupakan proses penerjemahan kebutuhan pengguna ke dalam bentuk desain sistem yang terstruktur, meliputi perancangan arsitektur, basis data, antarmuka pengguna, serta alur proses sistem sebelum dilakukan implementasi. Proses ini bertujuan untuk menghasilkan sistem yang efektif, efisien, dan mudah dikembangkan.
+Dalam konteks penelitian ini, rancang bangun sistem digunakan sebagai pendekatan untuk mengembangkan Sistem Informasi Akademik (SIAKAD) berbasis website pada SD Negeri Cadas Pangeran. Proses rancang bangun dilakukan dengan mengacu pada kebutuhan pengguna, yaitu pihak administrasi sekolah, guru, dan siswa, sehingga sistem yang dihasilkan mampu mengelola data akademik secara terintegrasi dan terkomputerisasi.
+Tahapan rancang bangun sistem dalam penelitian ini meliputi analisis kebutuhan sistem, perancangan model sistem menggunakan Unified Modeling Language (UML), perancangan basis data menggunakan Entity Relationship Diagram (ERD), serta perancangan antarmuka pengguna (user interface). Seluruh tahapan tersebut dilaksanakan dengan pendekatan Rapid Application Development (RAD) yang menekankan pada pengembangan sistem secara cepat, iteratif, dan melibatkan pengguna secara langsung.
+Dengan adanya proses rancang bangun yang terstruktur, sistem informasi akademik yang dikembangkan diharapkan mampu meningkatkan efektivitas dan efisiensi pengelolaan data akademik, meminimalkan kesalahan pencatatan, serta mempermudah penyajian informasi akademik secara akurat dan tepat waktu bagi seluruh pihak yang berkepentingan
+Sistem Informasi Akademik 
+Sistem informasi akademik merupakan penerapan sistem informasi di bidang pendidikan yang berfungsi untuk mengelola data dan aktivitas akademik. Menurut Sutabri, sistem informasi akademik adalah sistem yang dirancang untuk mengelola data akademik guna mendukung proses pendidikan, termasuk pengelolaan data siswa, guru, mata pelajaran, jadwal, dan nilai.
+Menurut Romney dan Steinbart, sistem informasi akademik membantu institusi pendidikan dalam mengintegrasikan berbagai data akademik sehingga dapat diakses secara cepat dan akurat oleh pihak yang berwenang. Dengan adanya sistem informasi akademik, proses administrasi akademik dapat berjalan lebih efektif dan efisien.
+Penerapan sistem informasi akademik di sekolah memberikan manfaat yang signifikan, antara lain meningkatkan kualitas pengelolaan data akademik, mempercepat penyampaian informasi, serta meningkatkan transparansi antara pihak sekolah, guru, dan siswa. Sistem ini juga mendukung pengambilan keputusan yang lebih baik dalam pengelolaan kegiatan akademik.
+Sekolah
+Sekolah merupakan suatu organisasi pendidikan formal yang menyelenggarakan proses pembelajaran secara terencana dan terstruktur dengan tujuan mengembangkan kemampuan akademik dan karakter peserta didik. Sebagai sebuah institusi, sekolah tidak hanya berperan sebagai tempat berlangsungnya kegiatan belajar mengajar, tetapi juga sebagai unit organisasi yang menjalankan fungsi manajerial, administratif, dan evaluatif dalam sistem pendidikan.
+Dalam penyelenggaraan pendidikan, sekolah memiliki tanggung jawab dalam mengelola berbagai sumber daya, seperti peserta didik, pendidik, kurikulum, serta sarana dan prasarana pendukung. Pengelolaan tersebut menghasilkan sejumlah data akademik yang harus dicatat, diolah, disimpan, dan disajikan secara sistematis, terutama yang berkaitan dengan data siswa, proses pembelajaran, penilaian hasil belajar, dan pelaporan akademik. Oleh karena itu, pengelolaan informasi menjadi bagian penting dalam mendukung keberlangsungan operasional sekolah.
+Sekolah dasar sebagai jenjang pendidikan formal awal memiliki karakteristik khusus, yaitu jumlah peserta didik yang relatif banyak dengan kebutuhan administrasi akademik yang berkelanjutan dan berulang setiap tahun ajaran. Aktivitas akademik seperti pencatatan nilai, pengelompokan kelas, penyusunan jadwal, serta pelaporan hasil belajar memerlukan sistem pengelolaan yang rapi dan konsisten agar informasi yang dihasilkan bersifat akurat dan dapat dipertanggungjawabkan.
+ Dalam konteks tersebut, sekolah dituntut untuk mampu menyesuaikan diri dengan perkembangan teknologi informasi. Pemanfaatan sistem informasi di lingkungan sekolah berperan sebagai sarana pendukung untuk meningkatkan efektivitas kerja administrasi, mengurangi ketergantungan pada proses manual, serta meminimalkan kesalahan dalam pengelolaan data akademik. Sistem informasi akademik menjadi solusi yang relevan untuk membantu sekolah dalam mengintegrasikan seluruh data akademik ke dalam satu sistem yang terpusat.
+Berdasarkan paparan tersebut, sekolah dapat dipandang sebagai sebuah organisasi pendidikan yang memerlukan dukungan sistem informasi untuk menunjang pengelolaan kegiatan akademik secara optimal. Penerapan sistem informasi akademik di sekolah diharapkan mampu meningkatkan kualitas pengelolaan data, mempercepat penyampaian informasi, serta mendukung pengambilan keputusan yang lebih efektif oleh pihak sekolah.
+Website
+Website merupakan kumpulan halaman web yang saling terhubung dan dapat diakses melalui jaringan internet. Menurut Hidayat, website adalah fasilitas internet yang menghubungkan dokumen dalam lingkup lokal maupun jarak jauh sehingga memungkinkan pengguna untuk mengakses informasi secara luas.
+Menurut Pressman, website tidak hanya berfungsi sebagai media informasi, tetapi juga sebagai platform aplikasi berbasis web yang mendukung interaksi antara pengguna dan sistem. Hal ini menjadikan website sebagai media yang tepat untuk pengembangan sistem informasi.
+Penggunaan website sebagai platform sistem informasi akademik memberikan kemudahan akses bagi pengguna tanpa dibatasi oleh waktu dan tempat. Selain itu, sistem berbasis web tidak memerlukan instalasi aplikasi khusus sehingga lebih mudah digunakan oleh admin, guru, dan siswa.
+
+Rapid Application Development
+Rapid Application Development (RAD) merupakan metode pengembangan perangkat lunak yang menekankan pada kecepatan dan keterlibatan pengguna. Menurut Pressman, RAD adalah model proses pengembangan perangkat lunak yang menggunakan pendekatan iteratif dan prototyping untuk mempercepat pembangunan sistem.
+Menurut Kendall, metode RAD memungkinkan pengguna terlibat secara langsung dalam setiap tahap pengembangan sehingga kebutuhan pengguna dapat dipahami dengan lebih baik. Hal ini menjadikan sistem yang dihasilkan lebih sesuai dengan kebutuhan nyata di lapangan.
+Metode RAD sangat cocok digunakan untuk pengembangan sistem berskala kecil hingga menengah, termasuk sistem informasi akademik. Dengan metode ini, waktu pengembangan dapat dipersingkat tanpa mengurangi kualitas sistem yang dihasilkan.
+Adapun pendapat menurut penulis sendiri, Rapid Application Development (RAD) merupakan metode pengembangan sistem yang menekankan kecepatan, efisiensi, dan kolaborasi antara pengembang dan pengguna. Dalam konteks pembuatan website sekolah, penggunaan metode RAD sangat membantu karena memungkinkan proses pembuatan sistem dilakukan secara bertahap, cepat, dan fleksibel. Dari penjelasan diatas metode ini memiliki beberapa tahapan sebagai berikut.
+
+Gambar 2.1 Metode Rapid Application Development
+Perencanaan Kebutuhan
+Tahap requirement planning merupakan tahap awal dalam metode Rapid Application Development (RAD). Pada tahap ini dilakukan identifikasi permasalahan dan kebutuhan sistem melalui komunikasi langsung antara pengembang dan pengguna sistem. Tujuan utama tahap ini adalah untuk memahami proses bisnis yang berjalan serta menentukan kebutuhan fungsional dan non-fungsional sistem.
+Dalam penelitian ini, tahap requirement planning dilakukan dengan mengamati proses pengelolaan data akademik di SD Cadas Pangeran, seperti pengelolaan data siswa, guru, jadwal, dan nilai. Selain itu, dilakukan diskusi dengan pihak sekolah untuk mengetahui kebutuhan sistem yang diharapkan.
+Hasil dari tahap ini adalah daftar kebutuhan sistem yang akan menjadi dasar dalam proses perancangan dan pengembangan sistem informasi akademik berbasis web.
+Desian Sistem
+Tahap system design merupakan tahap perancangan sistem berdasarkan kebutuhan yang telah ditentukan sebelumnya. Pada tahap ini dilakukan perancangan struktur sistem, alur proses, basis data, serta antarmuka pengguna (user interface).
+Perancangan sistem dalam metode RAD dilakukan secara cepat dan fleksibel dengan menggunakan pendekatan prototyping. Prototipe sistem yang dibuat akan ditunjukkan kepada pengguna untuk mendapatkan masukan dan perbaikan sebelum sistem dikembangkan lebih lanjut.
+Tahap ini bertujuan untuk memastikan bahwa rancangan sistem sesuai dengan kebutuhan pengguna dan mudah digunakan oleh admin, guru, maupun siswa.
+Pengembangan
+Tahap construction merupakan tahap pembangunan dan pengkodean sistem berdasarkan desain yang telah disepakati. Pada tahap ini, pengembang mulai mengimplementasikan rancangan sistem ke dalam bentuk aplikasi yang dapat dijalankan.
+Dalam metode RAD, tahap pembangunan dilakukan secara bertahap dan iteratif. Setiap bagian sistem yang telah selesai dikembangkan akan langsung diuji dan dievaluasi oleh pengguna untuk mendapatkan umpan balik.
+Pendekatan ini memungkinkan perbaikan sistem dilakukan dengan cepat sehingga sistem yang dikembangkan menjadi lebih sesuai dengan kebutuhan pengguna
+Implementasi Sistem
+Tahap implementation merupakan tahap penerapan sistem yang telah dikembangkan ke lingkungan pengguna. Pada tahap ini dilakukan pengujian sistem secara menyeluruh untuk memastikan semua fungsi berjalan dengan baik.
+Selain itu, dilakukan pelatihan kepada pengguna sistem, seperti admin dan guru, agar dapat menggunakan sistem dengan optimal. Setelah sistem diterapkan, dilakukan evaluasi untuk mengetahui apakah sistem telah memenuhi kebutuhan pengguna.
+Tahap ini menjadi tahap akhir dalam metode RAD, di mana sistem siap digunakan untuk mendukung pengelolaan data akademik di SD Cadas Pangeran.
+
+Database
+Basis data merupakan kumpulan data yang disimpan secara sistematis dalam suatu sistem komputer. Menurut Kadir, basis data adalah kumpulan data yang saling berhubungan dan disimpan bersama-sama tanpa pengulangan yang tidak perlu.
+Menurut Silberschatz, Korth, dan Sudarshan, basis data berfungsi untuk menyimpan data secara terintegrasi sehingga dapat diakses, dikelola, dan diperbarui dengan mudah. Basis data juga memungkinkan penggunaan data secara bersama oleh banyak pengguna.
+Dalam sistem informasi akademik, basis data berperan sebagai pusat penyimpanan seluruh data akademik, seperti data siswa, guru, nilai, dan jadwal. Penggunaan basis data yang terstruktur dapat meningkatkan konsistensi data, mengurangi duplikasi, serta menjaga keamanan dan keakuratan data.
+XAMPP
+XAMPP merupakan sebuah perangkat lunak bersifat open source yang berfungsi sebagai web server lokal (localhost) dan digunakan untuk membantu proses pengembangan serta pengujian aplikasi berbasis web. XAMPP menyediakan satu paket lengkap yang di dalamnya telah terintegrasi beberapa komponen utama yang dibutuhkan untuk membangun aplikasi web, seperti web server, database server, dan bahasa pemrograman server-side. Dengan adanya XAMPP, pengembang tidak perlu melakukan instalasi komponen satu per satu karena seluruh kebutuhan dasar telah disediakan dalam satu aplikasi.
+Menurut Apache Friends, XAMPP adalah paket perangkat lunak yang terdiri dari Apache sebagai web server, MySQL/MariaDB sebagai database server, serta PHP dan Perl sebagai bahasa pemrograman. Nama XAMPP sendiri merupakan singkatan dari huruf X yang berarti cross-platform, A untuk Apache, M untuk MySQL/MariaDB, P untuk PHP, dan P untuk Perl. XAMPP dapat dijalankan pada berbagai sistem operasi seperti Windows, Linux, dan macOS, sehingga bersifat fleksibel dan mudah digunakan oleh pengembang.
+Dalam pengembangan aplikasi berbasis web, XAMPP berperan sebagai lingkungan server lokal yang memungkinkan pengembang untuk menjalankan, menguji, dan memodifikasi aplikasi sebelum diimplementasikan ke server online. Hal ini sangat membantu karena proses pengembangan dapat dilakukan tanpa harus terhubung dengan jaringan internet serta dapat meminimalkan kesalahan sebelum sistem digunakan secara nyata oleh pengguna.
+MySQL
+MySQL merupakan salah satu Sistem Manajemen Basis Data Relasional (Relational Database Management System / RDBMS) yang bersifat open source dan banyak digunakan dalam pengembangan aplikasi berbasis web. MySQL berfungsi untuk menyimpan, mengelola, dan memanipulasi data secara terstruktur menggunakan bahasa SQL (Structured Query Language). Dalam pengembangan sistem informasi akademik, MySQL berperan sebagai tempat penyimpanan utama seluruh data akademik yang diperlukan oleh sistem.
+Menurut Kadir, MySQL adalah perangkat lunak basis data yang menggunakan konsep relasional, di mana data disimpan dalam bentuk tabel-tabel yang saling berhubungan melalui kunci tertentu. Konsep ini sangat sesuai untuk pengelolaan data akademik yang memiliki keterkaitan antar data, seperti hubungan antara data siswa dengan kelas, mata pelajaran, guru, dan nilai.
+Dalam penelitian ini, MySQL digunakan sebagai basis data untuk mendukung pembangunan sistem informasi akademik berbasis web pada SD Cadas Pangeran. Penggunaan MySQL memungkinkan pengelolaan data akademik dilakukan secara terintegrasi, aman, dan mudah diakses oleh pengguna sesuai dengan hak akses yang diberikan.
+PHP
+PHP (Hypertext Preprocessor) merupakan bahasa pemrograman sisi server (server-side scripting language) yang banyak digunakan dalam pengembangan aplikasi berbasis web. PHP bekerja dengan cara memproses kode di sisi server, kemudian menghasilkan output berupa halaman web yang dapat ditampilkan pada browser pengguna. PHP dirancang khusus untuk pengembangan web dinamis yang memerlukan pengolahan data dan interaksi dengan basis data. 
+Menurut Rasmus Lerdorf, pencipta PHP, PHP adalah bahasa skrip yang dirancang untuk memudahkan pengembang dalam membangun aplikasi web yang interaktif dan dinamis. PHP memungkinkan pengembang untuk mengelola data, memproses formulir, serta berinteraksi dengan basis data secara efisien.
+Dalam penelitian ini, PHP digunakan sebagai bahasa pemrograman utama dalam pembangunan sistem informasi akademik pada SD Cadas Pangeran. PHP berfungsi untuk mengelola logika sistem, menghubungkan antarmuka pengguna dengan basis data MySQL, serta mengatur alur proses sistem sesuai dengan kebutuhan pengguna.
+Framework
+Framework merupakan sekumpulan struktur kerja, pustaka, dan aturan yang digunakan untuk membantu pengembang dalam membangun aplikasi secara lebih terstruktur, efisien, dan konsisten. Framework menyediakan komponen siap pakai sehingga pengembang tidak perlu membangun aplikasi dari awal. Dalam pengembangan aplikasi web berbasis PHP, salah satu framework yang paling banyak digunakan adalah Laravel.
+Menurut Taylor Otwell, Laravel adalah framework PHP berbasis Model-View-Controller (MVC) yang dirancang untuk mempermudah dan mempercepat proses pengembangan aplikasi web dengan sintaks yang elegan dan fitur yang lengkap. Laravel menyediakan berbagai fasilitas bawaan seperti sistem routing, manajemen basis data, autentikasi pengguna, dan keamanan aplikasi.
+Dalam penelitian ini, Laravel digunakan sebagai framework utama untuk membangun sistem informasi akademik pada SD Cadas Pangeran. Penggunaan Laravel bertujuan untuk meningkatkan kualitas struktur kode, mempercepat proses pengembangan sistem, serta mendukung penerapan metode Rapid Application Development (RAD).
+Laravel
+Laravel merupakan sebuah framework PHP berbasis open source yang digunakan untuk membangun aplikasi web secara terstruktur dan efisien. Laravel pertama kali dikembangkan oleh Taylor Otwell dengan tujuan untuk menyediakan framework modern yang mampu menyederhanakan proses pengembangan aplikasi web tanpa mengurangi kualitas dan keamanan sistem. Laravel dirancang dengan sintaks yang elegan serta dilengkapi dengan berbagai fitur bawaan yang mendukung pengembangan aplikasi skala kecil hingga besar.
+Menurut Otwell (2011), Laravel adalah framework PHP yang menerapkan arsitektur Model-View-Controller (MVC) dan menyediakan berbagai fasilitas untuk pengelolaan routing, autentikasi, keamanan, serta manajemen basis data. Dengan konsep tersebut, Laravel mampu meningkatkan produktivitas pengembang dan mempermudah proses pemeliharaan aplikasi.
+Dalam penelitian ini, Laravel digunakan sebagai framework utama untuk membangun sistem informasi akademik pada SD Cadas Pangeran berbasis web. Penggunaan Laravel bertujuan untuk menghasilkan sistem yang terstruktur, mudah dikembangkan, dan sesuai dengan kebutuhan pengguna sekolah.
+Diagram Alir (Flowchart)
+Diagram alir (flowchart) merupakan alat bantu pemodelan yang digunakan untuk menggambarkan urutan langkah dan alur logika suatu proses secara visual. Flowchart menyajikan tahapan kerja sistem dalam bentuk simbol-simbol grafis yang saling terhubung, sehingga memudahkan pemahaman terhadap proses yang berjalan dari awal hingga akhir. Penggunaan diagram alir bertujuan untuk memberikan gambaran yang sistematis mengenai bagaimana suatu sistem bekerja sebelum diimplementasikan ke dalam bentuk program.
+Dalam pengembangan sistem informasi, flowchart berperan sebagai sarana untuk menjelaskan alur proses operasional sistem, baik yang melibatkan interaksi pengguna maupun proses internal sistem. Diagram alir membantu pengembang dan pengguna dalam memahami logika sistem, mengidentifikasi kemungkinan kesalahan proses, serta memastikan bahwa setiap tahapan berjalan sesuai dengan kebutuhan yang telah ditetapkan.
+Pada penelitian ini, diagram alir digunakan untuk memodelkan alur kerja Sistem Informasi Akademik (SIAKAD) berbasis website, mulai dari proses pengguna melakukan autentikasi (login), pengelolaan data akademik, hingga penyajian informasi akademik kepada pengguna sesuai dengan hak aksesnya. Setiap aktor dalam sistem, yaitu administrator, guru, dan siswa, memiliki alur proses yang berbeda dan digambarkan secara terpisah agar alur kerja sistem dapat dipahami secara jelas.
+Flowchart juga digunakan sebagai dasar dalam proses perancangan dan pengembangan sistem menggunakan metode Rapid Application Development (RAD). Dengan adanya diagram alir, proses pengembangan sistem dapat dilakukan secara lebih terarah karena alur logika sistem telah divisualisasikan terlebih dahulu. Hal ini membantu meminimalkan kesalahan implementasi serta mempercepat proses pembangunan sistem.
+Berdasarkan uraian tersebut, diagram alir (flowchart) dapat disimpulkan sebagai alat pemodelan yang penting dalam pengembangan sistem informasi akademik. Penggunaan flowchart membantu memastikan bahwa alur proses sistem berjalan secara sistematis, konsisten, dan sesuai dengan kebutuhan pengguna, sehingga sistem yang dikembangkan dapat berfungsi secara optimal. Kemudian untuk simbol pada bagan alir dapat dilihat pada gambar dibawah ini.
+
+Gambar 2.1 Flowchart
+
+ERD (Entity Relationship Diagram)
+Entity Relationship Diagram (ERD) merupakan model konseptual yang digunakan untuk menggambarkan struktur data serta hubungan antar data dalam suatu sistem informasi. ERD berfungsi sebagai dasar dalam perancangan basis data dengan menampilkan entitas, atribut, serta relasi yang saling berkaitan sehingga data dapat dikelola secara terintegrasi dan konsisten. Dibawah ini merupakan gambar dari:
+
+Gambar 2.3 ERD
+Unified Modeling Language (UML)
+Unified Modeling Language (UML) digunakan sebagai sarana pemodelan untuk merepresentasikan sistem perangkat lunak dalam bentuk visual sebelum tahap implementasi dilakukan. UML membantu menggambarkan bagaimana sistem dirancang, bagaimana proses berjalan, serta bagaimana komponen sistem saling berinteraksi satu sama lain. Dengan pemodelan ini, rancangan sistem dapat dipahami secara menyeluruh tanpa harus langsung melihat kode program.
+Dalam penelitian pengembangan sistem informasi, UML berfungsi sebagai alat perancangan yang menjembatani kebutuhan pengguna dengan solusi teknis yang akan dibangun. Pemodelan menggunakan UML memungkinkan identifikasi fungsi sistem, alur kerja, serta struktur data dilakukan secara lebih terencana. Hal ini sangat penting untuk mengurangi kesalahan perancangan dan memastikan sistem yang dikembangkan sesuai dengan kebutuhan yang telah dianalisis sebelumnya.
+Pada penelitian ini, UML dimanfaatkan untuk menggambarkan rancangan Sistem Informasi Akademik berbasis website yang diterapkan di lingkungan sekolah. Pemodelan dilakukan untuk memperjelas peran masing-masing pengguna dalam sistem, aliran proses akademik, serta hubungan antar komponen sistem yang terlibat dalam pengelolaan data akademik. Dengan UML, kompleksitas sistem dapat disederhanakan ke dalam bentuk diagram yang mudah dipahami.
+Diagram-diagram UML yang digunakan dalam penelitian ini mencakup pemodelan fungsional, proses, dan struktur sistem. Use case diagram digunakan untuk menggambarkan layanan yang disediakan sistem bagi setiap pengguna. Activity diagram digunakan untuk menunjukkan urutan aktivitas dalam proses akademik. Sequence diagram digunakan untuk memperlihatkan alur komunikasi antar objek dalam sistem, sedangkan class diagram digunakan untuk memodelkan struktur data dan relasi antar kelas yang membentuk sistem.
+Penggunaan UML dalam penelitian ini memberikan dasar yang kuat dalam proses perancangan dan pengembangan sistem informasi akademik. Pemodelan yang dilakukan membantu memastikan bahwa sistem dibangun secara terstruktur, memiliki alur kerja yang jelas, serta mendukung proses implementasi dan pengujian sistem secara lebih efektif.
+Dari yang sudah dijelaskan berikut adalah gambar dan penjelasan dari beberapa jenis UML:
+Use Case Diagram
+Use Case Diagram digunakan untuk menggambarkan ruang lingkup fungsional sistem serta hubungan antara sistem dengan pihak-pihak yang menggunakannya. Diagram ini menunjukkan layanan apa saja yang disediakan oleh sistem dan siapa saja yang berhak mengakses layanan tersebut. Dengan demikian, use case diagram membantu memperjelas batasan sistem serta peran masing-masing pengguna dalam menjalankan aktivitas akademik. Berikut gambar Use Case Diagram :
+
+Gambar 2.4 Use Case Diagram
+Class Diagram
+Class Diagram digunakan untuk menggambarkan struktur logis sistem dalam bentuk kelas-kelas beserta atribut, operasi, dan hubungan antar kelas. Diagram ini menunjukkan bagaimana data dan fungsi sistem disusun secara terorganisir. Class diagram menjadi dasar dalam perancangan struktur sistem berbasis objek. Berikut gambar Class Diagram:
+
+Gambar 2.5 Class Diagram
+Activity Diagram 
+Activity Diagram digunakan untuk menggambarkan alur aktivitas yang terjadi di dalam sistem berdasarkan urutan proses yang dilakukan oleh pengguna maupun sistem. Diagram ini menampilkan bagaimana suatu aktivitas dimulai, diproses, hingga menghasilkan keluaran tertentu. Activity diagram sangat berguna untuk memahami logika alur kerja sistem secara bertahap. Berikut gambar Activity Diagram:
+
+Gambar 2.6 Activity Diagram
+
+Sequence Diagram
+Sequence Diagram digunakan untuk menggambarkan urutan interaksi antara objek-objek di dalam sistem berdasarkan waktu kejadian. Diagram ini menunjukkan bagaimana suatu permintaan diproses melalui pertukaran pesan antar komponen sistem hingga menghasilkan respon yang diharapkan. Fokus utama sequence diagram adalah pada alur komunikasi sistem. Berikut gambar Sequence Diagram:
+
+Gambar 2.7 Sequence Diagram
+
+Penelitian Sebelumnya
+Penelitian 1
+Judul
+:
+Pengembangan Sistem Informasi Akademik Berbasis Web Menggunakan Metode Prototype
+Penulis
+:
+Rizki Maulana &amp; Andini Rahmawati
+Tahun
+:
+2023
+Universitas
+:
+Universitas Teknokrat Indonesia
+Persamaan
+:
+Sistem informasi akademik berbasis website pengelolaan data nilai dan jadwal
+Perbedaan
+:
+Metode pengembangan menggunakan Prototype, bukan RAD; objek penelitian pada SMP
+Penelitian 2
+Judul
+:
+Implementasi Sistem Informasi Akademik Sekolah Berbasis Web Menggunakan Framework Laravel
+Penulis
+:
+Muhammad Fikri Ramadhan
+Tahun
+:
+2024
+Universitas
+:
+Universitas Muhammadiyah Sukabumi
+Persamaan
+:
+Menggunakan framework Laravel; berbasis web; pengelolaan data akademik
+Perbedaan
+:
+Tidak menggunakan metode RAD; fokus pada pengujian sistem, bukan kecepatan pengembangan
+Penelitian 3
+Judul
+:
+Analisis dan Perancangan Sistem Informasi Akademik Menggunakan UML Berbasis Website
+Penulis
+:
+Dewi Lestari &amp; Ahmad Fauzi
+Tahun
+:
+2022
+Universitas
+:
+Universitas Negeri Jakarta
+Persamaan
+:
+Menggunakan UML dan sistem akademik berbasis web
+Perbedaan
+:
+Penelitian hanya sampai tahap perancangan (tidak implementasi); tidak menggunakan RAD
+Penelitian 4
+Judul
+:
+Sistem Informasi Akademik Berbasis Web untuk Mendukung Pengelolaan Nilai dan Presensi Siswa
+Penulis
+:
+Yoga Pratama &amp; Salsabila Putri
+Tahun
+:
+2023
+Universitas
+:
+Universitas Bina Sarana Informatika
+Persamaan
+:
+Pengelolaan nilai dan presensi; sistem akademik berbasis web
+Perbedaan
+:
+Fokus utama pada presensi siswa; tidak membahas metode pengembangan RAD
+Penelitian 5
+Judul
+:
+Pengembangan Sistem Informasi Sekolah Berbasis Web dengan Pendekatan Model MVC
+Penulis
+:
+Nur Aisyah
+Tahun
+:
+2024
+Universitas
+:
+Universitas Islam Nusantara
+Persamaan
+:
+Sistem sekolah berbasis web; pengelolaan data akademik
+Perbedaan
+:
+Tidak menggunakan metode RAD; lebih menitikberatkan pada arsitektur MVC
+
+Kerangka Berpikir
+Perkembangan teknologi informasi menuntut lembaga pendidikan untuk mengelola data akademik secara lebih efektif dan efisien. SD Cadas Pangeran masih menerapkan sistem pengelolaan data akademik secara manual, seperti pencatatan data siswa, guru, jadwal pelajaran, nilai, dan pembuatan laporan akademik. Kondisi tersebut menimbulkan berbagai permasalahan, antara lain keterlambatan penyampaian informasi, kesulitan dalam pencarian data, risiko kehilangan atau kerusakan data, serta kemungkinan terjadinya duplikasi data. Permasalahan ini menunjukkan bahwa sistem yang berjalan belum mampu mendukung kebutuhan pengelolaan data akademik secara optimal, sehingga diperlukan sebuah sistem informasi akademik berbasis web yang mampu mengotomatisasi dan mengintegrasikan seluruh proses akademik
+Untuk mengatasi permasalahan tersebut, penelitian ini merancang dan membangun sistem informasi akademik menggunakan metode Rapid Application Development (RAD). Metode RAD dipilih karena memungkinkan proses pengembangan sistem dilakukan secara cepat dan iteratif melalui pembuatan prototipe yang melibatkan pengguna secara langsung. Sistem dikembangkan menggunakan framework Laravel yang mendukung arsitektur Model-View-Controller (MVC) serta memiliki fitur keamanan dan manajemen basis data yang baik. Dengan penerapan metode RAD dan pemanfaatan Laravel, sistem informasi akademik yang dibangun diharapkan mampu mengelola data akademik secara terstruktur, meningkatkan akurasi dan kecepatan pengolahan data, serta mempermudah pihak sekolah dalam mengakses dan menyajikan informasi akademik secara efektif.:
+
+17500601903PERMASALAHAAN
+175006019031756410274955Belum ada sistem informasi akademik untuk mengelola data akademik secara digital dan efektik
+1756410274955
+
+3047032220834
+3047032220834
+
+17500601903PERMASALAHAAN
+175006019031756410274955Berdampak pada pengelolaan data yang lambat dan sangat menyulitkan dalam pencarian kemudian pelaporan data
+1756410274955
+
+3083527207217
+3083527207217
+
+17500601903SOLUSI
+175006019031756410274955PEMBUATAN SISTEM INFORMASI AKADEMIK YANG SANGAT EFEKTIF DAN EFESIEN
+1756410274955
+
+3106677210499
+3106677210499
+
+17500601903METODE PENGEMBANGAN
+175006019031756410274955RAPID APPLICATION DEVELOPMENT
+1756410274955
+
+3118251216286
+3118251216286
+
+17500601903TEKNOLOGI YANG DI GUNAKAN 
+175006019031756410274955LARAVEL (WEB PROGRAMMING)
+MYSQL (Database)
+1756410274955
+
+Gambar 2.1 Flowchart
+Gambar 2.8 Gambar Kerangka Berpikir
+
+     BAB III
+METODOLOGI PENELITIAN
+3.1          Objek Penelitian
+Objek yang dijadikan fokus dalam penelitian ini adalah SD Negeri Cadas Pangeran, sebuah institusi pendidikan formal pada jenjang Sekolah Dasar (SD) yang berada di wilayah Kabupaten Sumedang. Sekolah ini dipilih sebagai lokasi penelitian karena proses pengelolaan data akademik yang diterapkan masih belum sepenuhnya terkomputerisasi dan terintegrasi.
+Kondisi tersebut menyebabkan berbagai kendala dalam kegiatan administrasi akademik, seperti lambatnya proses pengolahan data, tingginya potensi kesalahan pencatatan, serta keterbatasan dalam penyajian informasi akademik secara cepat dan akurat. Oleh karena itu, penelitian ini diarahkan untuk mengkaji dan mengembangkan sistem informasi akademik berbasis website yang sesuai dengan kebutuhan operasional SD Negeri Cadas Pangeran.
+3.2          Metode Pengumpulan Data
+Pengumpulan data dalam penelitian ini dilakukan untuk memperoleh gambaran yang jelas mengenai kondisi sistem yang berjalan serta kebutuhan pengguna. Teknik pengumpulan data yang digunakan meliputi beberapa metode berikut:
+a.    Observasi (Pengamatan)
+Observasi dilakukan dengan melakukan peninjauan langsung terhadap aktivitas pengelolaan data akademik di lingkungan SD Negeri Cadas Pangeran. Kegiatan yang diamati mencakup proses pendataan siswa, pengelolaan data guru, pengisian nilai, serta penyusunan laporan akademik. Dari hasil pengamatan tersebut diketahui bahwa sebagian besar proses masih dilakukan secara manual dan belum didukung oleh sistem yang terintegrasi.
+b.    Wawancara (Interview)
+Metode wawancara dilakukan dengan mengadakan komunikasi langsung bersama pihak sekolah, khususnya kepala sekolah dan tenaga pendidik. Tujuan wawancara ini adalah untuk menggali informasi terkait permasalahan yang dihadapi, kebutuhan sistem yang diharapkan, serta fitur-fitur yang diperlukan dalam sistem informasi akademik. Informasi yang diperoleh menjadi dasar dalam perumusan kebutuhan sistem.
+c.     Studi Pustaka (Literature Review)
+Studi pustaka dilakukan dengan menelaah berbagai sumber referensi yang relevan, seperti buku teks, jurnal ilmiah, serta hasil penelitian sebelumnya. Referensi tersebut berkaitan dengan sistem informasi akademik, pengembangan aplikasi berbasis web, dan metode Rapid Application Development (RAD), yang digunakan sebagai landasan teoritis dalam penelitian ini.
+3.3          Metode Pengembangan Sistem
+Metode pengembangan sistem yang diterapkan dalam penelitian ini adalah Rapid Application Development (RAD). Pemilihan metode RAD didasarkan pada karakteristiknya yang menekankan pada kecepatan pengembangan sistem serta keterlibatan pengguna secara aktif dalam setiap tahapannya.
+Tahapan pengembangan sistem menggunakan metode RAD dalam penelitian ini meliputi beberapa fase sebagai berikut:
+1.    Perencanaan Kebutuhan (Requirement Planning)
+Tahap perencanaan kebutuhan dilakukan untuk mengidentifikasi tujuan sistem serta kebutuhan fungsional yang harus dipenuhi. Identifikasi kebutuhan diperoleh dari hasil observasi dan wawancara dengan pihak sekolah. Pada tahap ini ditentukan ruang lingkup sistem, seperti pengelolaan data siswa, guru, kelas, mata pelajaran, jadwal pembelajaran, dan nilai akademik.
+2.    Desain Pengguna (User Design)
+Tahap desain sistem bertujuan untuk merancang bentuk dan struktur sistem berdasarkan kebutuhan yang telah ditetapkan. Perancangan dilakukan dengan membuat model sistem menggunakan Unified Modeling Language (UML), menyusun rancangan basis data, serta merancang tampilan antarmuka pengguna agar mudah dipahami dan digunakan.
+3.    Konstruksi (Construction)
+Tahap pengembangan merupakan proses implementasi rancangan sistem ke dalam bentuk aplikasi. Sistem informasi akademik dibangun sebagai aplikasi berbasis website dengan memanfaatkan framework Laravel, bahasa pemrograman PHP, serta basis data MySQL. Pada tahap ini dilakukan pengujian awal untuk memastikan setiap fungsi berjalan dengan baik.
+4.    Pelaksanaan (Cutover)
+Tahap implementasi dilakukan dengan menerapkan sistem yang telah dibangun di lingkungan sekolah. Kegiatan pada tahap ini meliputi pengujian akhir sistem, penyesuaian apabila ditemukan kekurangan, serta pemberian pengarahan kepada pengguna agar sistem dapat dimanfaatkan secara optimal.
+3.4          Analisis dan Perancangan Sistem
+3.4.1     Analisis Sistem Berjalan
+Analisis sistem berjalan dilakukan untuk mengetahui kondisi pengelolaan data akademik sebelum sistem dikembangkan. Berdasarkan hasil pengamatan, proses administrasi akademik di SD Negeri Cadas Pangeran masih dilaksanakan secara manual, sehingga membutuhkan waktu yang relatif lama dan berpotensi menimbulkan kesalahan dalam pencatatan maupun perhitungan data.
+  
+Gambar 3.1 Diagram Alir Sistem Berjalan
+3.4.2     Analisis Kebutuhan Sistem
+Analisis kebutuhan sistem dilakukan untuk merumuskan spesifikasi sistem yang akan dikembangkan agar sesuai dengan kebutuhan pengguna:
+a.    Kebutuhan Fungsional
+Sistem harus mampu melayani tiga aktor utama dengan hak akses berbeda:
+1.   Sistem mampu melakukan pengelolaan data siswa, guru, kelas, mata pelajaran, jadwal, dan nilai akademik.
+2.   Sistem menyediakan pembagian hak akses bagi pengguna, yaitu administrator, guru, dan siswa.
+3.  Sistem dapat menyajikan serta menghasilkan laporan akademik sesuai kebutuhan sekolah.
+b.    Kebutuhan Non-Fungsional
+1.    Dikembangkan berbasis website sehingga dapat diakses dengan mudah.
+2.   Sistem dilengkapi dengan mekanisme keamanan melalui proses autentikasi pengguna.
+3.    Sistem memiliki tampilan yang sederhana dan mudah dipahami oleh pengguna.
+3.4.3     Perancangan Model (UML)
+Perancangan model sistem pada penelitian ini dilakukan dengan memanfaatkan Unified Modeling Language (UML) sebagai alat bantu pemodelan. UML digunakan untuk menggambarkan rancangan sistem secara visual, baik dari sisi struktur data, alur proses, maupun interaksi antar komponen yang terdapat pada Sistem Informasi Akademik (SIAKAD) berbasis website. Pemodelan ini bertujuan agar sistem dapat dipahami secara menyeluruh sebelum masuk ke tahap pengembangan dan implementasi.
+a.    Use Case
+Use Case Diagram berfungsi untuk menggambarkan ruang lingkup sistem serta keterlibatan aktor dalam menjalankan fungsi-fungsi yang tersedia. Aktor yang terlibat dalam sistem ini terdiri dari Administrator/Tenaga Administrasi, Guru (Wali Kelas atau Guru Mata Pelajaran), Kepala Sekolah, dan Siswa. Setiap aktor memiliki peran dan hak akses yang berbeda sesuai dengan tugas dan tanggung jawabnya.
+Administrator bertanggung jawab terhadap pengelolaan data utama seperti data siswa, data guru, kelas, mata pelajaran, serta tahun ajaran. Guru memiliki akses untuk melihat jadwal mengajar dan melakukan penginputan nilai siswa. Siswa dapat mengakses informasi akademik yang berkaitan dengan jadwal pelajaran dan hasil nilai, sedangkan kepala sekolah berfungsi sebagai pihak yang memantau laporan akademik secara keseluruhan.
+
+Gambar  3.2 Use Case Diagram
+b.    Class Diagram
+Class Diagram digunakan untuk menggambarkan struktur internal sistem dalam bentuk kelas-kelas beserta atribut dan relasi antar kelas tersebut. Diagram ini memberikan gambaran mengenai bagaimana data disusun dan saling berhubungan di dalam sistem.
+Pada Sistem Informasi Akademik yang dikembangkan, class diagram terdiri dari beberapa kelas utama, antara lain User, Siswa, Guru, Kelas, Mata Pelajaran, dan Nilai. Relasi antar kelas menunjukkan hubungan data yang digunakan dalam proses akademik, sehingga membantu pengembang dalam merancang struktur basis data serta alur logika aplikasi secara sistematis.
+
+Gambar 3.3 Class diagram
+c.    Activity Diagram
+Activity Diagram digunakan untuk memodelkan alur aktivitas sistem berdasarkan peran masing-masing pengguna. Diagram ini menunjukkan rangkaian aktivitas yang dilakukan pengguna mulai dari awal proses hingga sistem menghasilkan keluaran tertentu.
+1)Activity Diagram Admin
+
+Gambar 3.4  Activity Diagram Admin
+Activity Diagram Admin menggambarkan tahapan aktivitas yang dilakukan oleh administrator dalam mengelola data akademik. Proses diawali dengan administrator melakukan login ke sistem, kemudian memilih menu pengelolaan data. Selanjutnya administrator dapat melakukan penambahan, perubahan, atau penghapusan data, lalu sistem akan menyimpan data ke dalam basis data dan menampilkan informasi keberhasilan prosesi.
+2)Activity Diagram Guru
+
+Gambar 3.5 Activity Diagram Guru
+Activity Diagram Guru menggambarkan alur kegiatan guru dalam mengelola nilai siswa. Guru melakukan login, memilih kelas serta mata pelajaran yang diampu, kemudian memasukkan nilai siswa sesuai dengan data yang tersedia. Setelah itu, sistem menyimpan nilai tersebut ke dalam basis data.
+3)Activity Diagram Siswa
+
+Gambar 3.6  Activity Diagram Siswa
+Activity Diagram Siswa menunjukkan aktivitas siswa dalam mengakses informasi akademik. Proses dimulai dari login ke sistem, dilanjutkan dengan pemilihan menu jadwal atau nilai, dan sistem menampilkan data sesuai dengan identitas siswa yang sedang menggunakan sistem..
+d.    Sequence Diagram
+Sequence Diagram digunakan untuk menggambarkan urutan interaksi antar objek dalam sistem berdasarkan waktu. Diagram ini menunjukkan aliran pesan yang terjadi antara pengguna, sistem, dan basis data dalam menjalankan suatu fungsi.
+1)Sequence Diagram Login
+
+Gambar 3.7 Sequence Diagram Login
+Sequence Diagram Login memperlihatkan proses autentikasi pengguna. Pengguna memasukkan data login, sistem memproses dan memverifikasi data tersebut ke basis data, kemudian sistem memberikan respon berupa akses ke dashboard sesuai dengan hak akses pengguna apabila data valid.
+2)Sequence Diagram Pengelolaan Nilai (Guru)
+
+Gambar Sequence 3.8  Diagram Input Nilai
+Diagram ini menggambarkan alur interaksi saat guru melakukan penginputan nilai siswa. Sistem menampilkan data siswa berdasarkan kelas dan mata pelajaran, guru memasukkan nilai, dan sistem menyimpan data nilai tersebut ke dalam basis data.
+3)Sequence Diagram Lihat Nilai (Siswa)
+
+Gambar 3.9 Sequence Diagram Lihat Nilai
+Sequence diagram ini menunjukkan proses ketika siswa melihat nilai akademik. Sistem mengambil data nilai berdasarkan identitas siswa yang sedang login dan menampilkan informasi nilai dalam bentuk laporan.
+3.4.4     Perancangan Database
+Perancangan basis data dilakukan untuk mendukung penyimpanan dan pengelolaan data akademik secara terorganisir dan saling terhubung. Pada penelitian ini, perancangan database direpresentasikan menggunakan Entity Relationship Diagram (ERD).
+Entitas yang digunakan dalam sistem meliputi User, Siswa, Guru, Kelas, Mata Pelajaran, Jadwal, dan Nilai. Setiap entitas dihubungkan melalui relasi yang dirancang menggunakan primary key dan foreign key guna menjaga konsistensi dan integritas data. Sebagai contoh, satu kelas dapat memiliki banyak siswa, dan setiap siswa dapat memiliki lebih dari satu nilai untuk mata pelajaran yang berbeda.
+
+Gambar 3.10 Entity Relationship Diagram (ERD)
+
+BAB IV
+HASIL PENELITIAN
+BAB IV
+HASIL PENELITIAN DAN PEMBAHASAN
+4.1 Penyajian Data
+Pada tahap ini dilakukan penyajian hasil implementasi dari Sistem Informasi Akademik (SIAKAD) berbasis website pada SD Negeri Cadaspangeran yang dibangun menggunakan framework Laravel dengan metode Rapid Application Development (RAD). Sistem yang dikembangkan bertujuan untuk membantu pengelolaan data akademik agar lebih efektif, efisien, dan terintegrasi dibandingkan sistem manual yang sebelumnya digunakan oleh pihak sekolah.
+Sistem informasi akademik ini memiliki tiga jenis pengguna utama, yaitu administrator, guru, dan siswa. Setiap pengguna memiliki hak akses yang berbeda sesuai kebutuhan pengguna dalam sistem.
+Berikut merupakan hasil implementasi fitur-fitur utama yang terdapat pada sistem.
+
+4.1.1 Implementasi Halaman Login
+Halaman login merupakan halaman awal yang digunakan pengguna untuk masuk ke dalam sistem. Pada halaman ini pengguna diwajibkan memasukkan username dan password sesuai akun yang telah terdaftar pada database sistem.
+Sistem akan melakukan proses validasi data login untuk memastikan bahwa pengguna memiliki hak akses yang sesuai. Jika username dan password benar, maka pengguna akan diarahkan menuju dashboard sesuai level pengguna. Namun apabila data login tidak sesuai, sistem akan menampilkan pesan kesalahan.
+Halaman login dirancang dengan tampilan sederhana agar mudah digunakan oleh seluruh pengguna sistem.
+
+Gambar 4.1 Halaman Login
+
+4.1.2 Implementasi Dashboard Administrator
+Dashboard administrator merupakan halaman utama yang digunakan admin untuk mengelola seluruh data akademik pada sistem. Pada halaman ini administrator dapat melihat informasi umum terkait jumlah siswa, jumlah guru, jumlah kelas, serta menu navigasi sistem.
+Administrator memiliki hak akses penuh terhadap seluruh fitur sistem seperti pengelolaan data siswa, data guru, mata pelajaran, jadwal pelajaran, data nilai, serta pengelolaan akun pengguna.
+Dashboard dirancang agar mempermudah administrator dalam melakukan pengelolaan data akademik secara terintegrasi.
+
+Gambar 4.2 Halaman Dashboard
+4.1.3 Implementasi Data Siswa
+Halaman data siswa digunakan untuk mengelola seluruh data siswa yang terdapat pada sekolah. Pada halaman ini administrator dapat menambahkan data siswa baru, mengubah data siswa, menghapus data siswa, serta melihat daftar siswa yang telah tersimpan pada sistem.
+Data siswa yang dikelola meliputi:
+Nomor Induk Siswa
+Nama siswa
+Status
+Jenis kelamin
+Kelas
+Alamat
+Nomor telepon
+Tahun ajaran
+Sistem penyimpanan data siswa menggunakan database MySQL sehingga data dapat tersimpan secara terstruktur dan mudah dicari kembali.
+
+Gambar 4.3 Halaman Data Siswa
+
+4.1.4 Implementasi Data Guru
+Halaman data guru digunakan untuk mengelola data guru yang terdapat pada sekolah. Administrator dapat melakukan proses tambah data, ubah data, dan hapus data guru.
+Informasi data guru yang disimpan meliputi:
+Nama guru
+NIP
+Mata pelajaran
+Jenis kelamin
+Nomor telepon
+Alamat
+Pengelolaan data guru yang terkomputerisasi membantu sekolah dalam mempermudah pencarian serta pengelolaan informasi tenaga pengajar.
+
+Gambar 4.4 Halaman Data Guru
+
+4.1.5 Implementasi Data Mata Pelajaran
+Halaman mata pelajaran digunakan untuk mengelola data mata pelajaran yang terdapat pada sistem akademik.
+Administrator dapat menambahkan mata pelajaran baru, memperbarui data mata pelajaran, maupun menghapus data yang sudah tidak digunakan.
+Data mata pelajaran digunakan sebagai acuan dalam proses penjadwalan dan penginputan nilai siswa.
+
+Gambar 4.5 Halaman Data Mata Pelajaran
