@@ -222,14 +222,6 @@ Jalankan aplikasi dan akses halaman berikut untuk melihat tampilan:
 | Kontak | `http://127.0.0.1:8000/kontak` |
 | Diagram Skripsi | `http://127.0.0.1:8000/diagram_skripsi.html` |
 
----
-
-## 👨‍💻 Penulis
-
-**Erlan Nurhaditia** — 220660121025
-Program Studi Informatika
-Fakultas Teknologi Informasi
-Universitas Sebelas April
 
 ---
 
